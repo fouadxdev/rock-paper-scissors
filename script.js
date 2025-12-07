@@ -21,8 +21,8 @@ const paperBtn = document.querySelector("#paper");
 const scissorsBtn = document.querySelector("#scissors");
 const resultsDiv = document.querySelector("#result");
 const scoreDiv = document.querySelector("#score");
-
 const playAgainBtn = document.querySelector('#playAgain');
+
 playAgainBtn.addEventListener("click", () => {
   humanScore = 0;
   computerScore = 0;
@@ -34,7 +34,7 @@ playAgainBtn.addEventListener("click", () => {
 rockBtn.addEventListener("click", () => {
   const computerChoice = getComputerChoice();
   const result = playRound("Rock", computerChoice);
-  console.log(result);
+  
 
   resultsDiv.textContent = result;
   scoreDiv.textContent = `You: ${humanScore} | Computer: ${computerScore}`;
